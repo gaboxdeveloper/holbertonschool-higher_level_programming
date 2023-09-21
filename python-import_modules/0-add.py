@@ -5,4 +5,4 @@ a = 1
 b = 2
 c = add(a, b)
 add(a, b)
-print(f"{a} + {b} = {c}")
+print("{} + {} = {}".format(a, b, c))
