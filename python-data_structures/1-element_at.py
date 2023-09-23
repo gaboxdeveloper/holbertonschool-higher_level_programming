@@ -4,6 +4,5 @@ def element_at(my_list, idx):
         return None
     elif idx > len(my_list):
         return None
-    for n in my_list:
-        if idx == n:
-            return n + 1
+    for n in my_list[:idx]:
+        return n
