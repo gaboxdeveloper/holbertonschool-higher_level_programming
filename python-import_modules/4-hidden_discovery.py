@@ -6,4 +6,4 @@ def print_module_names(module):
         if not name.startswith('__'):
             print(name)
 if __name__ == "__main__":
-    print_module_names(gabipro)
+    print_module_names(hidden_4)
