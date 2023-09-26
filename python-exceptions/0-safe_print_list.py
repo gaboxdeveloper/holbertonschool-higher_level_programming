@@ -7,6 +7,6 @@ def safe_print_list(my_list=[], x=0):
             else:
                 print(my_list[i], end='')
         return x
-    except cantReturnX:
+    except Exception:
         print("")
         return i
