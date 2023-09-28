@@ -3,6 +3,7 @@
 
 
 class Square:
-    """Class
-    square"""
-    __size = None
+    """This class is made
+    to create a square"""
+    def __init__(self):
+        self.__size = None
