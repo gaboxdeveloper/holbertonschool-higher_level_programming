@@ -3,6 +3,8 @@
 
 
 class Square:
+    """This class is made
+    to create a square"""
     def __init__(self, size=0):
         self.size = size  # Use the property setter to set the size
 
