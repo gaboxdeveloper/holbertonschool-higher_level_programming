@@ -4,7 +4,10 @@ make a class to create a rectangle"""
 
 
 class Rectangle:
-    """An empty reclangle"""
+    """A rectangle where we define
+    the width and the height.
+    Those are private attributes, but we can modify them
+    with the setter"""
     def __init__(self, width=0, height=0):
         self.__width = width
         self.__height = height
@@ -29,8 +32,8 @@ class Rectangle:
     @height.setter
     def height(self, value):
         if not isinstance(value, int):
-            raise TypeError("width must be an integer")
+            raise TypeError("height must be an integer")
         if value < 0:
-            raise ValueError("width must be >= 0")
+            raise ValueError("height must be >= 0")
         else:
             self.__height = value
