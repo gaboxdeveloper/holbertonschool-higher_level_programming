@@ -16,4 +16,4 @@ class BaseGeometry:
         if value <= 0:
             raise ValueError(f"{self.name} must be greater than 0")
         if not value:
-            raise TypeError(f"{self.name} is missing the value")
+            raise TypeError("BaseGeometry.integer_validator() missing 1 required positional argument: 'value'")
