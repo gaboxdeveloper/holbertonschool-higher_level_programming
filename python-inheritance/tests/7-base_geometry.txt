@@ -41,7 +41,3 @@ TypeError: lala must be an integer
 >>> bg.integer_validator("lala", {'name': 'Gabriel'})
 Traceback (most recent call last):
 TypeError: lala must be an integer
-
->>> bg.integer_validator("lala")
-Traceback (most recent call last):
-TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
