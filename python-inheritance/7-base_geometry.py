@@ -5,8 +5,10 @@
 class BaseGeometry:
     """not an empty class"""
     def area(self):
+        """function"""
         raise Exception("area() is not implemented")
     def integer_validator(self, name, value):
+        """function to validate an itenger"""
         self.name = name
         if not isinstance(value, int):
             raise TypeError(f"{self.name} must be an integer")
