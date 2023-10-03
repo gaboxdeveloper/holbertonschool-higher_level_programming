@@ -1,0 +1,25 @@
+# Test Case 1: Empty list
+>>> MyList = __import__('1-my_list').MyList
+>>> my_list = MyList()
+>>> my_list.print_sorted()
+[]
+
+# Test Case 2: List of integers
+>>> my_list = MyList([3, 1, 2])
+>>> my_list.print_sorted()
+[1, 2, 3]
+
+# Test Case 3: List of strings
+>>> my_list = MyList(['apple', 'banana', 'cherry'])
+>>> my_list.print_sorted()
+['apple', 'banana', 'cherry']
+
+# Test Case 4: Mixed data types
+>>> my_list = MyList([2, 'apple', 1, 'banana'])
+>>> my_list.print_sorted()
+[1, 2, 'apple', 'banana']
+
+# Test Case 5: Duplicate values
+>>> my_list = MyList([3, 1, 2, 1, 3])
+>>> my_list.print_sorted()
+[1, 1, 2, 3, 3]
