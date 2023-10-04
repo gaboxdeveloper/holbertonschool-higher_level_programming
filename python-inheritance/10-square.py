@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """module of a rectangle!"""
-Rectangle = __import__('9-rectangle').rectangle
+Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
@@ -12,4 +12,4 @@ class Square(Rectangle):
 
     def area(self):
         """return the area of the rectangle"""
-        return self.size ** 2
+        return self.__size ** 2
