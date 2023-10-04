@@ -29,3 +29,8 @@ TypeError: '<' not supported between instances of 'str' and 'int'
 >>> my_list = MyList(["hola", "mundo", "perro"])
 >>> my_list.print_sorted()
 ['hola', 'mundo', 'perro']
+
+# Test Case 7: 
+>>> my_list = MyList([2.5, 3, 5, 1, 3.4])
+>>> my_list.print_sorted()
+[1, 2.5, 3, 3.4, 5]

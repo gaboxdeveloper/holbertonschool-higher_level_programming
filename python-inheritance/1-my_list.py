@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-"""We will create a class"""
+"""Public instance method: def print_sorted(self):
+that prints the list, but sorted (ascending sort)
+You can assume that all the elements of the list 
+will be of type int"""
 
 
 class MyList(list):
@@ -7,5 +10,4 @@ class MyList(list):
     from the list class"""
     def print_sorted(self):
         """Print the list elements in ascending sorted order."""
-        sorted_list = sorted(self)
-        print(sorted_list)
+        print(sorted(self))
