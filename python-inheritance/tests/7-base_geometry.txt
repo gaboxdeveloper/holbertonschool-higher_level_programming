@@ -43,3 +43,11 @@ Traceback (most recent call last):
 Exception: area() is not implemented
 
 >>> bg.integer_validator("lala", True)
+
+>>> bg.integer_validator("lala", float("NaN"))
+Traceback (most recent call last):
+TypeError: lala must be an integer
+
+>>> bg.integer_validator("lala", float("inf"))
+Traceback (most recent call last):
+TypeError: lala must be an integer
