@@ -9,9 +9,6 @@ You don't need to manage file permission or file doesn't exist exceptions."""
 def read_file(filename=""):
     """function that reads a text file (UTF8)
     and prints it to stdout"""
-    try:
-        with open(filename, encoding="utf-8") as openfile:
-            for line in openfile:
-                print(line, end='')
-    except FileNotFoundError:
-        pass
+    with open(filename, encoding="utf-8") as openfile:
+        for line in openfile:
+            print(line, end='')
