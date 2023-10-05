@@ -12,7 +12,7 @@ class BaseGeometry:
         """function to validate an itenger"""
         if isinstance(name, str):
             self.name = name
-        if isinstance(value, int):
+        if not isinstance(value, int):
             raise TypeError(f"{self.name} must be an integer")
         if value <= 0:
             raise ValueError(f"{self.name} must be greater than 0")
