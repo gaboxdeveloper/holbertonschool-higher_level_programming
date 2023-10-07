@@ -20,20 +20,10 @@ class Student:
         self.age = age
 
     def to_json(self):
-        """to json public methodç
-        maybe I need more lines"""
-        if isinstance(self.first_name, (dict, str, int, bool)):
-            return self.first_name
-        elif isinstance(self.first_name, (list, tuple)):
-            return [item.to_json() for item in self.first_name]
-        elif hasattr(self.first_name, '__dict__'):
-            serializable_dict = {}
-            for key, value in self.first_name.__dict__.items():
-                if hasattr(value, 'to_json'):
-                    serialized_value = value.to_json()
-                else:
-                    None
-                serializable_dict[key] = serialized_value
-            return serializable_dict
-        else:
-            return None
+        """Retrieve a dictionary representation of a Student instance."""
+        student_dict = {
+            "first_name": self.first_name,
+            "last_name": self.last_name,
+            "age": self.age
+        }
+        return student_dict
