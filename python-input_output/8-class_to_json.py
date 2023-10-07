@@ -8,7 +8,6 @@ integer and boolean) for JSON serialization of an object:
 
 def class_to_json(obj):
     """function that returns the dictionary description"""
-    
     if hasattr(obj, '__dict__'):
         serializable_dict = {}
         for key, value in obj.__dict__.items():
