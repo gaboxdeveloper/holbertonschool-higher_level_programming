@@ -79,6 +79,6 @@ class Rectangle(Base):
     def display(self):
         """display the rectangle"""
         rect_str = ""
-        for _ in range(self.__width):
-            rect_str += str("#") * self.__height + "\n"
+        for _ in range(self.__height):
+            rect_str += str("#") * self.__width + "\n"
         print(rect_str.rstrip("\n"))
