@@ -101,14 +101,14 @@ class Rectangle(Base):
                 self.__x = kargs
             elif i == "y":
                 self.__y = kargs
-        # for i, arg in enumerate(args):
-        #     if i == 0:
-        #         self.id = arg
-        #     elif i == 1:
-        #         self.__width = arg
-        #     elif i == 2:
-        #         self.__height = arg
-        #     elif i == 3:
-        #         self.__x = arg
-        #     elif i == 4:
-        #         self.__y = arg
+        for i, arg in enumerate(args):
+            if i == 0:
+                self.id = arg
+            elif i == 1:
+                self.__width = arg
+            elif i == 2:
+                self.__height = arg
+            elif i == 3:
+                self.__x = arg
+            elif i == 4:
+                self.__y = arg
