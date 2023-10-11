@@ -87,3 +87,17 @@ class Rectangle(Base):
         """return rectangle representation"""
         return f"[Rectangle] ({self.id}) {self.x}/{self.y}"\
             f" - {self.width}/{self.height}"
+
+    def update(self, *args):
+        """update method"""
+        for i in enumerate(args):
+            if i[0] == 0:
+                self.id = i[1]
+            elif i[0] == 1:
+                self.__width = i[1]
+            elif i[0] == 2:
+                self.__height = i[1]
+            elif i[0] == 3:
+                self.__x = i[1]
+            elif i[0] == 4:
+                self.__y = i[1]
