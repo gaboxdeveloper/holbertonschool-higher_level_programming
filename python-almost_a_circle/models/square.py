@@ -34,3 +34,24 @@ class Square(Rectangle):
         """return square representation"""
         return f"[Square] ({self.id}) {self.x}/{self.y}"\
             f" - {self.width}"
+
+    def update(self, *args, **kwargs):
+        """update method"""
+        for i, kargs in kwargs.items():
+            if i == "id":
+                self.id = kargs
+            elif i == "size":
+                self.size = kargs
+            elif i == "x":
+                self.x = kargs
+            elif i == "y":
+                self.y = kargs
+        for i, arg in enumerate(args):
+            if i == 0:
+                self.id = arg
+            elif i == 1:
+                self.size = arg
+            elif i == 2:
+                self.x = arg
+            elif i == 3:
+                self.y = arg
