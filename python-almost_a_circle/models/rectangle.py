@@ -112,3 +112,14 @@ class Rectangle(Base):
                 self.__x = arg
             elif i == 4:
                 self.__y = arg
+
+    def to_dictionary(self):
+        """to dictionary"""
+        dictionary = {
+            'x': self.__x,
+            'y': self.__y,
+            'id': self.id,
+            'heigth': self.__height,
+            'width': self.__width,
+        }
+        return dictionary
